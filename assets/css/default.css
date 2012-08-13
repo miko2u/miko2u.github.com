@@ -1,0 +1,108 @@
+/*!
+ * Mikostyle v1.0
+ *
+ * Copyright 2012 Miko.Hoshina
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built Customized by @miko2u
+ */
+
+/* Datepicker w/bootstrap
+---------------------------------*/
+.ui-widget { font-family: Meiryo,Verdana,Arial,sans-serif; font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Meiryo,Verdana,Arial,sans-serif; font-size: 1em; }
+.ui-widget-content {
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.ui-datepicker { width: 15em; padding: .2em .2em 0; display: none; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em .1em; text-align: center; text-decoration: none; }
+.ui-datepicker-sunday   .ui-state-default { background-image: none; background-color: #f99; }
+.ui-datepicker-saturday .ui-state-default { background-image: none; background-color: #6cf; }
+.ui-datepicker-holiday  .ui-state-default { background-image: none; background-color: #f9f; }
+.ui-datepicker-extraday .ui-state-default { background-image: none; background-color: #ff3; }
+
+/* Tablesorter w/bootstrap
+---------------------------------*/
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th { background-color:#f6f6f6; }
+.table-striped tbody tr:hover td, .table-striped tbody tr:hover th { background-color:#fff8d4; }
+
+table .header {
+	cursor:pointer;
+	border-bottom:2px solid #000;
+	padding-right:20px;
+	background-image:url(images/sorter-bg.gif);
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+table .header:hover,
+table .headerSortUp,
+table .headerSortDown {
+	background-color: rgba(141, 192, 219, 0.25);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+table .headerSortUp { background-image: url(images/sorter-asc.gif); }
+table .headerSortDown { background-image: url(images/sorter-desc.gif); }
+table .header:hover, table .headerSortUp:hover, table .headerSortDown:hover {
+	filter: alpha(opacity=80);
+	-khtml-opacity: 0.8;
+	  -moz-opacity: 0.8;
+	       opacity: 0.8;
+}
+
+table .blue   { color: #049cdb; border-bottom-color: #049cdb; }
+table .green  { color: #46a546; border-bottom-color: #46a546; }
+table .red    { color: #9d261d; border-bottom-color: #9d261d; }
+table .yellow { color: #ffc40d; border-bottom-color: #ffc40d; }
+table .orange { color: #f89406; border-bottom-color: #f89406; }
+table .purple { color: #7a43b6; border-bottom-color: #7a43b6; }
+table .headerSortUp.blue,   table .headerSortDown.blue   { background-color: #ade6fe; }
+table .headerSortUp.green,  table .headerSortDown.green  { background-color: #cdeacd; }
+table .headerSortUp.red,    table .headerSortDown.red    { background-color: #f4c8c5; }
+table .headerSortUp.yellow, table .headerSortDown.yellow { background-color: #fff6d9; }
+table .headerSortUp.orange, table .headerSortDown.orange { background-color: #fee9cc; }
+table .headerSortUp.purple, table .headerSortDown.purple { background-color: #e2d5f0; }
+
+/* Inputcount w/bootstrap
+----------------------------------*/
+.count {
+	padding:0 4px; font-size:10.998px; font-weight:bold; line-height:14px; text-align:center;
+	min-width:14px; display:block; position:absolute; z-index:9999; opacity:0.8;
+	background-color:#333; color:#fff; border-radius:4px;
+}
+.count-info { color:#fff; font-weight:bold; }
+.count-warn { color:#ff0; font-weight:bold; }
+.count-stop { color:#f00; font-weight:bold; }
+
+/* Mikostyle
+----------------------------------*/
+body {
+	margin:0;
+	font-family:"Meiryo", "Hiragino Kaku Gothic Pro", "MS PGothic", Helvetica, Arial, sans-serif;
+	font-size:10pt;
+	font-weight:normal;
+	color:#404040;
+}
+
+input, button, select, textarea {
+	font-family:"Meiryo", "Hiragino Kaku Gothic Pro", "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+
+.footer-fluid:before,
+.footer-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.footer-fluid:after {
+  clear: both;
+}
